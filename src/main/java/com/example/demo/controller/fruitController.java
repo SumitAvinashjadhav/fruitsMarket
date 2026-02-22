@@ -27,7 +27,7 @@ import jakarta.servlet.http.HttpSession;
 
 @Controller
 public class fruitController {
-
+	
 	@RequestMapping("/paymentsuccess")
 	public String paymentSuccess() {
 		return "paymentsuccess";
@@ -206,6 +206,7 @@ public class fruitController {
 	@RequestMapping("/showCart")
 	public String cartbean(HttpSession session, cartbean c) {
 	    registerBean r = (registerBean) session.getAttribute("getname");
+	    
 	    ArrayList<cartbean> list = new ArrayList<>();
 
 	    for (cartitem c1 : cid.findAll()) {

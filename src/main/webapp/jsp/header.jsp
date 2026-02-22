@@ -62,6 +62,7 @@
 								<div class="header-icons">
 									 <%
 										registerBean r = (registerBean) session.getAttribute("getname");
+									 
 										if (r != null) {
 									%>
 										<span style="color:white; font-weight:bold;">Welcome, <%= r.getFullname() %></span>
